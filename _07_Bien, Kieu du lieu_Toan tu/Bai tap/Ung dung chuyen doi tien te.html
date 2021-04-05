@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th> </th>
+    </tr>
+    <tr>
+        <th>
+            <input type="text" id="giatri">
+        </th>
+        <th>
+            <select>
+                <option>Viet Nam</option>
+            </select>
+        </th>
+        <th>
+            <select>
+                <option>USD</option>
+            </select>
+        </th>
+        <th>
+            <input type="button" value="convert" onclick="tinh()">
+        </th>
+    </tr>
+</table><br>
+<script>
+    function tinh() {
+        let a= document.getElementById('giatri').value;
+        let b = parseInt(a)/23000;
+        document.write('Result: '+b);
+        document.write('USD');
+    }
+
+
+</script>
+</body>
+</html>
