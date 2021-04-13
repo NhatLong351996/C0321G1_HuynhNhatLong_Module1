@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt('Mời nhập chuỗi 1: ');
+    let b=prompt('Mời nhập chuỗi 2: ');
+    let flag=true;
+    for (let i=0;i<a.length;i++) {
+            if (a[i]!==b[i]) {
+                alert('Không giống');
+                flag=false;
+                break;
+            }
+    }if (flag) {
+        alert('Giống nhau');
+    }
+</script>
+</body>
+</html>
