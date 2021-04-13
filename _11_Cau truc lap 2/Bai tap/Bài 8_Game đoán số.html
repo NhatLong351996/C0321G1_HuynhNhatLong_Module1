@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" id="game" onclick="doanso()">Chơi</button>
+<script>
+    let a= parseInt(prompt('Mời nhập số đầu trong khoảng: '));
+    let b= parseInt(prompt('Mời nhập số cuối trong khoảng: '));
+    let c= parseInt(prompt('Số bạn đoán là bao nhiêu: '));
+    let d= parseInt(Math.floor(Math.random() * (b-a)) + a);
+    let flag = true;
+    do {
+        if (c==d) {
+            alert('Bạn đoán đúng');
+            flag = false;
+            break;
+        }else if (c<d){
+            alert('bạn đoán thấp hơn');
+            c= prompt('Số bạn đoán là bao nhiêu: ');
+        }else if (c>d) {
+            alert('Bạn đoán cao hơn');
+            c= prompt('Số bạn đoán là bao nhiêu: ');
+        }
+
+    }while (flag);
+
+</script>
+</body>
+</html>

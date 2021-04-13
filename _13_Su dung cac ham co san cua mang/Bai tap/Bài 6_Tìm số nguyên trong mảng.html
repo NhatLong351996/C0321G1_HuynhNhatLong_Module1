@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=prompt('Mời nhập số phần tử của mảng: ');
+    let arr=[];
+    let flag=true;
+    for (let i=0;i<n;i++) {
+        arr[i]=parseInt(prompt('Mời nhập giá trị thứ '+i+'của mảng.'));
+    }alert('Mảng bạn nhập vào là: '+arr);
+    let arr2=parseInt(prompt('Mời nhập số nguyên bạn cần tìm: '));
+    for (let i=0;i<n;i++) {
+        if (arr[i]===arr2) {
+            alert(arr2+' in the array')
+            flag=false;
+        }
+    }if (flag) alert('Không tìm thấy');
+</script>
+</body>
+</html>

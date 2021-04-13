@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= parseInt(prompt('Nhập điểm kiểm tra: '));
+    let b= parseInt(prompt('Nhập điểm giữa kì: '));
+    let c= parseInt(prompt('Nhập điểm cuối kì: '));
+    let d= (a+b*2+c*3)/5;
+    if (d>=8.0)alert('Bạn xếp loại giỏi, điểm trung bình bạn là '+d);
+    else if (d>=6.5) alert('Bạn xếp loại khá, điểm trung bình bạn là '+d);
+    else if (d>=5.0) alert('Bạn xếp loại trung bình, điểm trung bình bạn là '+d);
+    else alert('Bạn xếp loại yếu, điểm trung bình bạn là: '+d);
+</script>
+</body>
+</html>

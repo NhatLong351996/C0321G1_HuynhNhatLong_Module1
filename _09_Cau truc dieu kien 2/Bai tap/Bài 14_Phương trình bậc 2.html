@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= parseInt(prompt('Mời nhập hệ số a: '));
+    let b= parseInt(prompt('Mời nhập hệ số b: '));
+    let c= parseInt(prompt('Mời nhập hệ số c: '));
+    let d=-c/b;
+    let denta= b^2-4*a*c;
+    let x1= (-b+ Math.sqrt(denta))/(2*a);
+    let x2= (-b- Math.sqrt(denta))/(2*a);
+    let e= -b/(2*a);
+    if (a==0){
+        if (b==0) alert('Phương trình vô nghiệm');
+        else{
+            if (c==0) alert('Phương trình vô số nghiệm');
+            else alert('Nghiệm của phương trình là: '+d);
+        }
+    }else if (denta >= 0){
+        alert('Phương trình có 2 nghiệm phân biệt là ' + x1 + ' và ' + x2);
+    }
+        else alert('Phương trinh vô nghiệm');
+</script>
+
+</body>
+</html>

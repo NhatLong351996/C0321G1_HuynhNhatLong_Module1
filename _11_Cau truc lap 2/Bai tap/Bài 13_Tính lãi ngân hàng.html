@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let laithang= parseInt(prompt('Mời nhập lãi tháng (%): '))/100;
+    let sothang =parseInt(prompt('Mời nhập số tháng vay (tháng)'));
+    let tienvay =parseInt(prompt('Mời nhập số tiền vay (VNĐ): '));
+    for (let i=1;i<=sothang;i++) {
+        tienvay =tienvay*(1+laithang);
+    }
+    document.write('lãi suất '+sothang+' tháng là: '+tienvay+' VNĐ');
+</script>
+</body>
+</html>

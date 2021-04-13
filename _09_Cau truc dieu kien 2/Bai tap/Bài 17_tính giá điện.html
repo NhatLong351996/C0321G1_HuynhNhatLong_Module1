@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= prompt('Mời nhập số kwh: ');
+    let b= a*600;//Nhỏ hơn 50 kwh//
+    let c=30000+(a-50)*1000;//50 kwh tiếp theo 1000/kwh//
+    let d= 80000+ (a-100)*1200;//Trên 100kwh,tính 1200/kwh tiếp theo //
+    if (a<=50) alert('Số tiền điện: '+b+'VNĐ');
+    else if (a<=100) alert('Số tiền điện: '+c+'VNĐ');
+    else alert('Số tiền điện: '+d+'VNĐ');
+
+</script>
+</body>
+</html>

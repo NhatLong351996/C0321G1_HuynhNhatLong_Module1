@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= prompt('Mời nhập thời gian gọi (phút): ');
+    let b= a*600;//Nhỏ hơn 50 phút tính 600đ/phút//
+    let c=30000+(a-50)*400;//Lớn hơn 50 phút Nhỏ hơn 200 phút//
+    let d= 90000+ (a-200)*200;//Lớn hơn 200 phút//
+    if (a<=50) alert('Số tiền cước: '+b+'VNĐ');
+    else if (a<=200) alert('Số tiền cước: '+c+'VNĐ');
+    else alert('Số tiền cước: '+d+'VNĐ');
+
+</script>
+</body>
+</html>

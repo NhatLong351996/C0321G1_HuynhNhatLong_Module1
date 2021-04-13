@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="text">
+<input type="button" id="but" value="Tra từ" onclick="tra()">
+<p id="result"></p>
+<script>
+
+    let eng=['dog','cat','mouse'];
+    let viet=['con chó','con mèo','con chuột'];
+    let i;
+    function tra() {
+        let txtText=document.getElementById("text").value;
+        let isNotExist=true;
+        for (i = 0; i < 3; i++) {
+            if (txtText == eng[i]) {
+                alert(viet[i]);
+                isNotExist=false;
+            }
+        }
+        if(isNotExist){
+            alert('khong tim thay');
+        }
+    }
+
+</script>
+</body>
+</html>

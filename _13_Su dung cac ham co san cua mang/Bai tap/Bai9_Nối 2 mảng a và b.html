@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n1=prompt('Mời nhập số phần tử của mảng 1: ');
+    let arr1=[];
+    for (let i=0;i<n1;i++) {
+        arr1[i]=parseInt(prompt('Mời nhập giá trị thứ '+i+' của mảng 1.'));
+    }
+    let n2=prompt('Mời nhập số phần tử của mảng 2: ');
+    let arr2=[];
+    for (let i=0;i<n2;i++) {
+        arr2[i]=parseInt(prompt('Mời nhập giá trị thứ '+i+'của mảng 2.'));
+    }
+let c=arr1.concat(arr2).join();
+alert(c);
+</script>
+</body>
+</html>

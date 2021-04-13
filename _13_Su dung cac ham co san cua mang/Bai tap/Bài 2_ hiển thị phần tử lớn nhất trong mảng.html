@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=prompt('Mời nhập số phần tử của mảng: ');
+    let arr=[];
+    for (let i=0;i<n;i++) {
+        arr[i]=prompt('Mời nhập giá trị thứ '+i+'của mảng.');
+    }alert('Mảng bạn nhập vào là: '+arr);
+    let max=arr[0];
+    for (i=1;i<n;i++) {
+        if (arr[i]>max) {
+            max=arr[i];
+        }
+    }alert('Giá trị lớn nhất trong mảng là: '+max);
+
+</script>
+</body>
+</html>
