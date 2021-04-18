@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let flag=true;
+    let Temperature= function (c) {
+        this.c=c;
+        this.getF= function () {
+            return (c*1.8)+32;
+        }
+        this.getK=function () {
+            return c+273.15;
+        }
+    }
+    do {
+        let temperature= new Temperature(parseFloat(prompt("Nhập độ c: ")));
+        if (temperature.c<-273){
+            alert("Nhập lại");
+        }else {
+            alert("Độ F= "+temperature.getF()+" ,  Kenvin = "+temperature.getK());
+        }
+    } while (flag);
+
+
+</script>
+</body>
+</html>

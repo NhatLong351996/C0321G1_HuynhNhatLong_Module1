@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name =["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+    let stars=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let flag=true;
+    function findName(namestar){
+        for (let i=1;i<8;i++) {
+            if (namestar===name[i]){
+                name[i]=stars[i];
+                alert("This star's name: "+namestar+" is found and it will be replaced by value: " +stars[i]);
+                alert("Name's array is changed: "+name);
+                flag=false;
+                break;
+            }
+        }
+    }
+    findName(prompt("Moi nhap ten ngoi sao"));
+    if (flag!==false){
+        alert("Can't find this star'name");
+    }
+
+
+
+
+</script>
+</body>
+</html>

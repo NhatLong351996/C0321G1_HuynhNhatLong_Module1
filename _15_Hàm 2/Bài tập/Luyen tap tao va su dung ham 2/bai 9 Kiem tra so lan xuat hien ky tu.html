@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=prompt("Moi nhap so ky tu: ");
+    let arr= new Array(n);
+    for (i=0;i<n;i++) {
+        arr[i]=prompt("Moi nhap ky tu thu "+i);
+    }
+    function check(_a,_arr) {
+        count=0;
+        for (i=0;i<n;i++) {
+            if (_a===_arr[i]) {
+                count++;
+            }
+        }alert("Tim thay "+count);
+    }
+    check(prompt("Nhap ky tu can tim: "),arr);
+</script>
+</body>
+</html>

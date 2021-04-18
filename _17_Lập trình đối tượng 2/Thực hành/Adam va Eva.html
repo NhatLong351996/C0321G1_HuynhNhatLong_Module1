@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple{
+        constructor(_weight) {
+            this.weightApple=_weight;
+        }
+    }
+    class Human{
+        constructor(_name,_gender,_weight) {
+            this.name=_name;
+            this.gender=_gender;
+            this.weightHuman=_weight;
+        }
+        say(_humanText) {
+            console.log(_humanText);
+        }
+        eatApple(apple){
+            if (apple.weightApple<=0) {
+                this.say("Het tao roi")
+            }else {
+                this.weightHuman++;
+                apple.weightApple--;
+            }
+        }
+        }
+        let apple = new Apple(10);
+    console.log("Qua tao nang: " +apple.weightApple);
+    let adam= new Human("adam","male",45);
+    let eva= new Human("eva","female",55);
+    do {
+        adam.eatApple(apple);
+        console.log("adam an 1 mieng, khoi luong qua tao con: "+apple.weightApple);
+        eva.eatApple(apple);
+        console.log("Eva an 1 mieng, khoi luong qua tao con: "+apple.weightApple);
+    }while (apple.weightApple>0);
+    console.log(adam.eatApple(apple));
+    console.log("Can nang cua adam sau khi an tao la: "+adam.weightHuman);
+    console.log("Can nang cua Eva sau khi an tao  la: "+eva.weightHuman);
+
+
+</script>
+</body>
+</html>

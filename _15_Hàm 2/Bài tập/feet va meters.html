@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function feetToMeter(_feet) {
+        let meter = parseFloat(0.305*_feet);
+        console.log(_feet+" feet= "+meter+" meter");
+    }
+    function meterToFeet(_meter) {
+        let feet= parseFloat(3.279*_meter);
+        console.log(_meter+" meter= "+feet+" feet");
+    }
+    for (let i=1.0;i<=10.0;i++) {
+        feetToMeter(i);
+    }
+    for (let i=20.0;i<=65.0;i+=5) {
+        meterToFeet(i)
+    }
+</script>
+</body>
+</html>

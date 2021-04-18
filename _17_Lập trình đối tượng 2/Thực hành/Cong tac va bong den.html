@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class SwitchButton{
+        constructor(_status) {
+            this.statusButton=_status;
+        }
+        }
+    class ElectricLamp{
+        constructor(_status) {
+            this.statusLamp=_status;
+        }
+        turnOnLamp(button) {
+            if (button.statusButton=="Nutbat"){
+                this.statusLamp="Batden"
+            }else {
+                this.statusLamp="Tatden"
+            }
+        }
+    }
+
+
+    for (let i=1;i<=5;i++) {
+        let lamp=new ElectricLamp("Tat den");
+        let button1 = new SwitchButton("Nutbat");
+        lamp.turnOnLamp(button1);
+        console.log(lamp.statusLamp);
+        let button2 = new SwitchButton("Nuttat");
+        lamp.turnOnLamp(button2);
+        console.log(lamp.statusLamp);
+
+    }
+
+
+</script>
+</body>
+</html>

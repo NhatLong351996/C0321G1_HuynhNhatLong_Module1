@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let giaithua;
+    function Giaithua(number) {
+        if (number<0){alert("Khong ton tai")} else {
+            giaithua=number;
+            for (let i=number;i>1;i--){
+                giaithua=giaithua*(i-1);
+            }alert("result: "+giaithua);
+        }
+    }
+    Giaithua(prompt("Moi nhap so tinh giai thua: "));
+</script>
+</body>
+</html>

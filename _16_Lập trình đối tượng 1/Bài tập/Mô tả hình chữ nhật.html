@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1500px" height="1000px"></canvas>
+<script>
+    let Rectangle = function (length,width) {
+        this.length=length;
+        this.width=width;
+        this.setLength=function (length) {this.length=length;
+        }
+        this.setWidth=function (width) {this.width=width;
+        }
+        this.getArea= function () {
+            return length*width;
+        }
+        this.getPerimeter=function () {
+            return (length+width)*2;
+        }
+    }
+    function drawRectangle() {
+        let ctx=document.getElementById("myCanvas").getContext("2d");
+        let a=parseInt(prompt("Length: "));
+        let b=parseInt(prompt("Width: "));
+        let rectangle1= new Rectangle(a,b);
+        ctx.moveTo(0,0);
+        ctx.lineTo(rectangle1.length,0);
+        ctx.lineTo(rectangle1.length,rectangle1.width);
+        ctx.lineTo(0,rectangle1.width);
+        ctx.lineTo(0,0);
+        ctx.stroke();
+        alert('Area is: '+rectangle1.getArea()+" and perimeter is: "+rectangle1.getPerimeter())
+    }
+    drawRectangle()
+
+</script>
+</body>
+</html>
