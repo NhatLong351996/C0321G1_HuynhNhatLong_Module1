@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tong=0;
+    let menu;
+    let tenmon="";
+    do {
+         menu= prompt("Chọn thức uống: \n"+
+            "1. Cafe\n"+
+            "2. Cam vắt\n"+
+            "3. Nước ép cà rốt\n"+
+            "4. Nước ép cà chua\n"+
+            "5. Nước lọc\n"+
+            "6. Nước dừa\n"+
+            "7. Thanh toán.");
+        switch (menu) {
+            case "1":
+                alert("20k/ly");
+                let num1 =prompt("Số ly: ");
+                tong+=num1*20000;
+                tenmon+="cafe số lượng: "+num1+"ly\n";
+                break;
+            case "2":
+                alert("15k/ly");
+                let num2=prompt("Số ly: ");
+                tong+=num2*15000;
+                tenmon+="cam vắt số lượng: "+num2+"ly\n";
+                break;
+            case "3":
+                alert("25k/ly");
+                let num3=prompt("Số ly: ");
+                tong+=num3*25000;
+                tenmon+="Nước ép cà rốt số lượng: "+num3+"ly\n";
+                break;
+            case "4":
+                alert("20k/ly");
+                let num4=prompt("Số ly: ");
+                tong+=num4*20000;
+                tenmon+="Nước ép cà chua số lượng: "+num4+"ly\n";
+                break;
+            case "5":
+                alert("free");
+                let num5=prompt("Số ly: ");
+                tong+=num5*0;
+                tenmon+="Nước lọc số lượng: "+num5+"ly\n";
+                break;
+            case "6":
+                alert("20k/ly");
+                let num6=prompt("Số ly: ");
+                tong+=num6*20000;
+                tenmon+="Nước dừa số lượng: "+num6+"ly\n";
+                break;
+            case "7":
+                alert("Bạn đã gọi các món sau: \n"+tenmon);
+                alert("Tổng thanh toán: "+tong+"VND");
+                break;
+                default:
+                    alert("Không có trong danh sách");
+        }
+    }while (menu!==7);
+
+
+</script>
+</body>
+</html>

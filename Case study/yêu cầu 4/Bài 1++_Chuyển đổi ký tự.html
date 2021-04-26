@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let text = prompt("Mời nhập chuỗi ký tự: ").toLowerCase().split(" ");
+    console.log(text);
+    let output = "";
+    let count=0;
+    for (let i = 0; i < text.length; i++) {
+        if (text[i] == "") {
+            continue;
+        } else {
+            for (let j = 0; j < text[i].length; j++) {
+                if (j == 0) {
+                    output += text[i].charAt(j).toUpperCase();
+                    console.log(output);
+                } else {
+                    output += text[i].charAt(j);
+                }
+            }
+        }
+        output += " ";
+    }
+    alert(output);
+    let arr = output.split(" ");
+    let max=arr[0].length;
+    let flag=true;
+        for (let i=1;i<arr.length;i++){
+            for (let j=0;j<arr[i].length;j++) {
+                count++;
+            }
+            if (count>max) {
+                alert("Từ dài nhất: "+arr[i]);
+                flag=false;
+            }else {
+                count=0;
+            }
+            }
+        if (flag) alert("Từ dài nhất: "+arr[0]);
+
+
+
+
+</script>
+</body>
+</html>

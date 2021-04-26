@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numerators = [5, 2, 5];
+    let denominators = [6, 3, 4];
+    let maxindex;
+    let phanSo;
+    let arr=[];
+    let max;
+    for (let i=0;i<3;i++){
+         phanSo=numerators[i]/denominators[i];
+         arr.push(phanSo);
+    }
+    max=arr[0];
+    for (let i=1;i<3;i++){
+         if (arr[i]>max) {
+             max=arr[i];
+             maxindex=i;
+         }else {
+             maxindex=0;
+         }
+    }
+
+    alert("Chỉ số lớn nhất là: "+maxindex+" Phân số lớn nhất là: "+numerators[maxindex]+"/"+denominators[maxindex]);
+
+</script>
+</body>
+</html>

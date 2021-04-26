@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m=prompt("Nhập chiều dài mảng 2 chiều: ");
+    let n=prompt("Nhập chiều rộng mảng 2 chiều: ");
+    let arr=Array(m);
+    for (let i=0;i<m;i++) {
+        arr[i]=Array(n);
+        for (let j=0;j<n;j++) {
+            arr[i][j]=prompt("Nhập phần tử mảng: ");
+        }
+    }
+    console.log(arr)
+    let max;
+    let min;
+    function maxArray(_arr) {
+         max=_arr[0][0];
+         min=_arr[0][0];
+        for (let i=0;i<_arr.length;i++){
+            for (let j=0;j<_arr[i].length;j++){
+                if (_arr[i][j]>max){
+                    max=_arr[i][j];
+                }else
+                if (_arr[i][j]<min){
+                    min=_arr[i][j];
+                }
+            }
+        }
+    }
+    maxArray(arr);
+    alert("Giá trị lớn nhất trong mảng là: "+max);
+    alert("Giá trị nhỏ nhất trong mảng là: "+min);
+
+
+</script>
+</body>
+</html>

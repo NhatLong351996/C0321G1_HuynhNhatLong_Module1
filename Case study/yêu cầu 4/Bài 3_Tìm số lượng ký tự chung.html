@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let text1=prompt("Mời nhập xâu ký tự thứ nhất: ").split("");
+    let text2=prompt("Mời nhập xâu ký tự thứ 2: ").split("");
+    let count=0;
+    for (let i=0;i<text1.length;i++) {
+        for (let j=0;j<text2.length;j++) {
+            if (text1[i]==text2[j]) {
+                count++;
+                text1.splice(i,1);
+                text2.splice(j,1);
+                i=0
+            }
+        }
+    }
+    alert(count);
+</script>
+</body>
+</html>
